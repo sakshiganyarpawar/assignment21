@@ -5,16 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reciept</title>
     <style>
+               .img1 {
+            text-align: center;
+            background-color:white;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #990000;
+        }
 
+        .heading{
+            color: navy;
+            background-color: rgb(205, 231, 231);
+            text-align: center;
+            font-size: 50px;
+        }
+        .name{
+            color: grey;
+            font-size: 20px;
+        }
+        .namevalue{
+            width:250px;
+            height: 20px;
+            border-radius: 3px;
+        }
+   .reciept-container{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .body{
+            text-align: center;
+            background-color: brown;
+            margin-top: 20px;
+            color:#ffffff;
+        }
+        .header1{
+            text-align: center;
+            background-color:white;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #990000;
+        }
+       
+        .reciept-detail{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+        .reciept-detail-key{
+            color: grey;
+            width: 30%;
+        }
+        .reciept-detail-value{
+            font-weight: bold;
+            color: black;
+            border-bottom: dashed gray;
+            width: 100%;
+        }
+        .Accountant-Signature{
+            text-align: right;
+            margin: 100px;
+            margin-right: 10px;
+            color: black;
+        }
+        #stmp{
+            width: 150px;
+            position:absolute;
+            right: 0;
+            bottom: -20px;
+            margin-right: 260px;
+            bottom: -20px;
+            transform: rotate(-20deg);
+        }
+        .reciept{
+            border-top: dashed gray;
+            padding-top: 10px;
+            color: black;
+        }
+        .reciept-footer{
+            background-color: #ffff4d;
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="reciept-container">
-      <div class="heading"><p>Arya Girls Hostel</p><hr/>
+      <div class="header"><p class="heading"><b>Arya Girls Hostel</b></p><hr/>
          <h1 class="body">Payment Reciept</h1>
          <form>
-            <label for="inputFullName">Enter Full Name: </label>
-            <input type="text" id="inputFullName" />
+            <label for="inputFullName" class="name">Enter Full Name: </label>
+            <input type="text" id="inputFullName" class="namevalue"/>
           </form>
             <div class="reciept-detail">
             <div class="reciept-detail-key">Reciept No:</div>
